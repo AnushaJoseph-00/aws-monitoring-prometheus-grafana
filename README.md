@@ -1,6 +1,6 @@
 # AWS Monitoring with Prometheus and Grafana
 
-Observability stack for the [Food Delivery App](https://github.com/AnushaJoseph-00/food-delivery-app-cicd-terraform) deployed on AWS ECS Fargate configured infrastructure using terraform. Monitors ECS container metrics and ALB traffic using Prometheus and Grafana, with AWS CloudWatch as the metrics source.
+An observability stack built on top of a MERN food delivery app (https://github.com/AnushaJoseph-00/food-delivery-app-cicd-terraform) deployed on AWS ECS Fargate using Terraform. Scrapes ECS CPU, memory and ALB request metrics from AWS CloudWatch via Prometheus and visualises them in Grafana dashboards.
 
 ## Architecture
 
@@ -145,7 +145,12 @@ Resources provisioned:
 
 ## Related Repository
 
-1st Phase of Project is available in following repo link: Application + CI/CD + Terraform: [food-delivery-app-cicd-terraform](https://github.com/AnushaJoseph-00/food-delivery-app-cicd-terraform)
+This repository is **Phase 2** of the Food Delivery App project, adding observability and monitoring on top of the existing infrastructure.
+
+| Phase | Repository | Description |
+|---|---|---|
+| Phase 1 | [food-delivery-app-cicd-terraform](https://github.com/AnushaJoseph-00/food-delivery-app-cicd-terraform) | MERN stack app with Docker, Terraform, GitHub Actions CI/CD, ECS Fargate |
+| Phase 2 | This repository | Prometheus + Grafana monitoring stack on EC2 with CloudWatch metrics |
 
 ---
 ## Credits
