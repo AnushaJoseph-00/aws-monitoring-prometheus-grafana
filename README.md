@@ -120,28 +120,28 @@ Resources provisioned:
 ### Application
 | Frontend | Admin Panel |
 |---|---|
-| ![Frontend](Pic1.jpg) | ![Admin](Pic2.jpg) |
+| ![Frontend](Frontend.jpg) | ![Admin](Admin_Panel.jpg) |
 
 ### CI/CD Pipeline
-![GitHub Actions](Pic3.jpg)
+![GitHub Actions](CI_CD_GithubActionPipeline.jpg)
 
 ### Monitoring
 | Prometheus Targets | Grafana Dashboard |
 |---|---|
-| ![Prometheus](Pic4.jpg) | ![Grafana](Pic5.jpg) |
+| ![Prometheus](Prometheus.jpg) | ![Grafana](Grafana.jpg) |
 
 | Grafana Datasource | |
 |---|---|
-| ![Datasource](Pic9.png) | |
+| ![Datasource](Grafana_Datasource.jpg) | |
 
 ### AWS Infrastructure
 | ECS Services | EC2 Monitoring Instance |
 |---|---|
-| ![ECS](Pic6.jpg) | ![EC2](Pic7.jpg) |
+| ![ECS](ECS_Services_Image.jpg) | ![EC2](EC2_Instance.jpg) |
 
 | CloudWatch Logs | |
 |---|---|
-| ![CloudWatch](Pic8.jpg) | |
+| ![CloudWatch](Cloud_Watch.jpg) | |
 
 ## Related Repository
 
