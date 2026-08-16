@@ -17,6 +17,16 @@ Observability stack for the [Food Delivery App](https://github.com/AnushaJoseph-
 | Terraform | Provisions ECS, ALB, VPC, ECR, IAM infrastructure |
 | GitHub Actions | CI/CD pipeline - build, scan, push, deploy |
 
+## Prerequisites
+
+- AWS account
+- MongoDB Atlas cluster (permanent database user, IP access `0.0.0.0/0`)
+- GitHub Actions secrets:
+  - `AWS_ACCESS_KEY_ID`
+  - `AWS_SECRET_ACCESS_KEY`
+  - `AWS_ACCOUNT_ID`
+---
+
 ## EC2 Setup
 
 Launch a t3.micro instance (Amazon Linux 2023) with the following settings:
@@ -105,16 +115,53 @@ Resources provisioned:
 
 ---
 
-## Prerequisites
+## 📸 Screenshots
 
-- AWS account
-- MongoDB Atlas cluster (permanent database user, IP access `0.0.0.0/0`)
-- GitHub Actions secrets:
-  - `AWS_ACCESS_KEY_ID`
-  - `AWS_SECRET_ACCESS_KEY`
-  - `AWS_ACCOUNT_ID`
----
+### Application
+| Frontend | Admin Panel |
+|---|---|
+| ![Frontend](Pic1.jpg) | ![Admin](Pic2.jpg) |
+
+### CI/CD Pipeline
+![GitHub Actions](Pic3.jpg)
+
+### Monitoring
+| Prometheus Targets | Grafana Dashboard |
+|---|---|
+| ![Prometheus](Pic4.jpg) | ![Grafana](Pic5.jpg) |
+
+| Grafana Datasource | |
+|---|---|
+| ![Datasource](Pic9.png) | |
+
+### AWS Infrastructure
+| ECS Services | EC2 Monitoring Instance |
+|---|---|
+| ![ECS](Pic6.jpg) | ![EC2](Pic7.jpg) |
+
+| CloudWatch Logs | |
+|---|---|
+| ![CloudWatch](Pic8.jpg) | |
 
 ## Related Repository
 
-Application + CI/CD + Terraform: [food-delivery-app-cicd-terraform](https://github.com/AnushaJoseph-00/food-delivery-app-cicd-terraform)
+1st Phase of Project is available in following repo link: Application + CI/CD + Terraform: [food-delivery-app-cicd-terraform](https://github.com/AnushaJoseph-00/food-delivery-app-cicd-terraform)
+
+---
+## Credits
+
+This project uses the [Tomato - Food Delivery App](https://github.com/Mshandev/Food-Delivery) originally built by [Muhammad Shan](https://github.com/Mshandev).
+
+The original application was used as the base for demonstrating DevOps and observability practices including:
+
+- Containerisation with Docker
+- Infrastructure as Code with Terraform
+- CI/CD automation with GitHub Actions
+- Security scanning with Trivy
+- Deployment to AWS ECS Fargate
+- Monitoring with Prometheus and Grafana
+- AWS CloudWatch metrics collection
+
+---
+
+
